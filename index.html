@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Cifras App</title>
+    <script src=""></script>
+    <title>Document</title>
 </head>
+
 <body>
-     
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg hd">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-cente" href="#"><img src="img/MR motobox.png"
+                        alt="MR_logo"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end h-50 w-50" id="menuLateral">
+
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav text-center mx-auto align-items-lg-end align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-normal" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-normal" href="#">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-normal" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-normal" href="#">Contato</a>
+                            </li>
+                        </ul>
+                        <a href="#"><button type="button" class="btn btn-primary btn-lg me-0 fs-6 fw-bold w-100 ">
+                                AGENDAR
+                                SERVIÇOS</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="herosection container-fluid">
+            <div class="row align-items-center min-vh-75">
+
+                <div class="col-12 col-lg-6 p-5 p-lg-5 pb-lg-0 text-center text-lg-start">
+                    <h1 class="fw-bold lh-sm h1-hero" style="color: floralwhite;">
+                        ESPECIALISTAS EM<br>
+                        <span class="text-warning">DESEMPENHO</span><br>
+                        <span class="text-warning">E CONFIANÇA</span>
+                    </h1>
+                    <p class="mt-lg-4 mt-3 text-light p-hero">
+                        Manutenção preventiva, corretiva e preparação<br>
+                        com quem entende de motos em São Paulo.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="d-flex flex-column flex-lg-row gap-lg-4 gap-3 btn-hero-container ms-lg-4 mt-lg-4 mt-md-4 mt-sm-4 mt-1">
+                <a href="#" class="col-lg-3"><button type="button" class="btn btn-hero p-3 fw-bold w-100" id="btn-cta">
+                        AGENDAR
+                        SERVIÇOS</button></a>
+                <a href="#" class="col-lg-3"><button type="button" class="btn btn-hero p-3 fw-bold w-100 text-nowrap"
+                        id="btn-wzp">
+                        <i class="bi bi-whatsapp pe-3"></i>FALAR NO WHATSAPP</button></a>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="d-flex flex-column flex-lg-row">
+                <div class="col-12 col-md-6 col-lg-4  text-center lh-lg mt-lg-4"><i class="bi bi-tools  " style="font-size: 4rem; color: #1F5E8C"></i>
+                    <h2 class="h2-services">PROFISSIONAIS<br>ESPECIALIZADOS</h2>
+                    <p class="p-services">Equipe experiente e apaixonada por motos</p>
+                </div>
+                <div class=" col-12 col-md-6 col-lg-4 text-center lh-lg mt-lg-4"><i class="bi bi-shield-check " style="font-size: 4rem; color: #1F5E8C;"></i>
+                    <h2 class="h2-services">GARANTIA DE <BR>SERVIÇOS</h2>
+                    <p class="p-services">Segurança e garantia em todos os nossos serviços</p>
+                </div>
+                <div class=" col-12 col-md-6 col-lg-4 text-center lh-lg mt-lg-4"><i class="bi bi-fast-forward " style="font-size: 4rem; color: #1F5E8C;"></i>
+                    <h2 class="h2-services">ATENDIMENTO <br> RAPIDO</h2>
+                    <p class="p-services">Para você voltar à estrada o quanto antes</p>
+                </div>
+            </div>
+        </section>
+        <section></section>
+    </main>
+    <footer> 
+
+    </footer>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+                                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                                crossorigin="anonymous"></script>
 </body>
+
 </html>
