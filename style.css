@@ -8,7 +8,6 @@
     padding: 0;
     caret-color: transparent;
     scroll-behavior: smooth;
-    /* Remove o cursor de digitação */
 }
 
 .btn,
@@ -17,6 +16,19 @@
     background-color: transparent;
     transition: all 0.3s ease;
 
+}
+
+body {
+    cursor: default;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
 }
 
 /* Cores base */
@@ -70,6 +82,7 @@
 .nav-link {
     color: var(--primary-white);
     position: relative;
+    cursor: pointer;
 }
 
 /* Header-efeito sublinhado ::after */
@@ -85,14 +98,6 @@
     ;
 }
 
-.nav-link:hover, .navbar-brand:hover {
-    color: var(--secondary-white);
-}
-
-.nav-link:hover::after {
-    width: 100%;
-
-}
 
 /* Header-alinhamento de itens da nav no mobile */
 .navbar-collapse {
@@ -110,11 +115,6 @@
     border-radius: 24px;
     transition: all 0.6s ease;
     ;
-}
-
-.btn-primary:hover {
-    background-color: var(--primary-yellow);
-    color: var(--primary-blue);
 }
 
 .hd-btn {
@@ -172,17 +172,48 @@
 
 }
 
-.h2-services {
+.h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1.8rem;
+
 }
 
-.p-services {
+.h2-animation {
+    position: relative;
+    transition: all 0.5s ease-in;
+}
+
+
+.h2-services-title {
+    font-size: clamp(3rem, 3vw, 5rem);
+}
+
+.h3-card {
+    transition: transform 0.3s ease-in;
+}
+
+
+.p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 1.6;
     color: var(--third-white);
+}
+
+.p-servicos {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--secondary-white);
+}
+
+.p-card {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--secondary-white);
+
 }
 
 #btn-cta {
@@ -191,22 +222,78 @@
     border: 2px solid var(--primary-yellow);
 }
 
-#btn-cta:hover {
-    background-color: transparent;
-    color: var(--secondary-white);
-    border: 2px solid var(--primary-yellow);
-    transition: all 0.5s ease-in-out;
-}
+
 
 #btn-wzp {
     border: 2px solid var(--secondary-white);
 
 }
 
-#btn-wzp:hover {
-    color: var(--cta-green);
-    border: 2px solid var(--cta-green);
-    transition: all 0.5s ease-in-out;
+/* Serviços */
+
+.blue-container {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    background-color: var(--primary-blue);
+    color: var(--primary-yellow);
+}
+
+/* cards */
+
+
+.profile-card {
+    background-color: var(--primary-blue);
+    border: 2px solid #cfd8dc;
+    border-radius: 20px;
+    position: relative;
+}
+
+/* borda dupla */
+.profile-card::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: -6px;
+    bottom: -6px;
+    border: 2px solid #cfd8dc;
+    border-radius: 20px;
+    z-index: -1;
+
+}
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #daf902;
+    object-fit: cover;
+}
+
+.divider {
+    border-color: #cfd8dc;
+}
+
+.card-services {
+    background-color: var(--primary-blue);
+    color: var(--primary-yellow);
+    border: 0;
+}
+
+.box-deco {
+    position: absolute;
+    top: -50px;
+    right: -40px;
+    width: clamp(10px, 25vw, 400px);
+    height: clamp(100px, 15vh, 200px);
+    background-color: transparent;
+    border: 3px solid var(--primary-white);
+    border-radius: 16px;
+}
+
+.section-3-img {
+    width: 50vw;
 }
 
 @media (max-width:768px) {
@@ -218,5 +305,55 @@
 
     .herosection {
         height: 90vh;
+    }
+
+    /*.box-deco{
+        height: 150px;
+        width: 80px;
+    }*/
+}
+
+@media (max-width:480px) {
+    /*.box-deco{
+        top: -20px;
+        right: -10px;
+        height: 100px;
+        width: 50px;
+    }*/
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    .nav-link:hover,
+    .navbar-brand:hover {
+        color: var(--secondary-white);
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    .btn-primary:hover {
+        background-color: var(--primary-yellow);
+        color: var(--primary-blue);
+    }
+
+    .h2-animation:hover {
+        font-size: clamp(4rem, 3vw, 6rem);
+    }
+
+    .h3-card:hover {
+        transform: translateY(-4px);
+    }
+
+    #btn-cta:hover {
+        background-color: transparent;
+        color: var(--secondary-white);
+        border: 2px solid var(--primary-yellow);
+    }
+
+    #btn-wzp:hover {
+        color: var(--cta-green);
+        border: 2px solid var(--cta-green);
     }
 }
