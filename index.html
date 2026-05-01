@@ -8,14 +8,14 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Mr Motobox - Oficina de Motos - Zona Sul / São Paulo – Manutenção Rápida e Confiável</title>
+    <title>MR Motobox - Oficina de Motos - Zona Sul / São Paulo – Manutenção Rápida e Confiável</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar sticky-lg-top navbar-expand-lg hd">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-cente" href="#"><img src="img/MR motobox.png"
+                <a class="navbar-brand d-flex align-items-center" href="#"><img src="img/MR motobox.png"
                         alt="MR_logo"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
@@ -32,21 +32,22 @@
                     <div class="offcanvas-body ">
                         <ul class="navbar-nav text-center mx-auto align-items-lg-end align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link fs-5 fw-normal" href="#">Inicio</a>
+                                <a class="nav-link fs-5 fw-normal" href="#inicio">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 fw-normal" href="#">Serviços</a>
+                                <a class="nav-link fs-5 fw-normal" href="#servicos">Serviços</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 fw-normal" href="#">Blog</a>
+                                <a class="nav-link fs-5 fw-normal" href="#sobre">Sobre</a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link fs-5 fw-normal" href="#">Contato</a>
+                                <a class="nav-link fs-5 fw-normal" href="#contato">Contato</a>
                             </li>
                         </ul>
-                        <a href="#"><button type="button" class="btn btn-primary btn-lg me-0 fs-6 fw-bold w-100 ">
-                                AGENDAR
-                                SERVIÇOS</button></a>
+                        <a href="#" class="btn btn-primary btn-lg me-0 fs-6 fw-bold" id="btn-cta">
+                            AGENDAR
+                            SERVIÇOS</a>
                     </div>
                 </div>
 
@@ -54,16 +55,16 @@
         </nav>
     </header>
     <main>
-        <section class="herosection container-fluid">
+        <section class="herosection container-fluid" id="inicio">
             <div class="row align-items-center min-vh-75">
 
                 <div class="col-12 col-lg-6 p-5 p-lg-5 pb-lg-0 text-center text-lg-start">
-                    <h1 class="fw-bold lh-sm h1-hero">
-                        É um prazer ter você aqui!
+                    <h1 class="fw-bolder lh-sm h1-hero">
+                        Os melhores mecânicos que sua moto merece à apenas um clique.
                     </h1>
-                    <p class="mt-lg-4 mt-3 text-light p-hero">
-                        Manutenção preventiva, corretiva e preparação<br>
-                        com quem entende de motos em São Paulo.
+                    <p class="mt-lg-4 mt-3 text-light p p-hero">
+                        Não perca tempo. Nosso agendamento é 100% online, disponível 24h. Agende uma revisão ou fale
+                        diretamente com nossos especialistas
                     </p>
                 </div>
             </div>
@@ -78,26 +79,7 @@
                         <i class="bi bi-whatsapp pe-3"></i>FALAR NO WHATSAPP</button></a>
             </div>
         </section>
-        <section class="container-fluid section-1">
-            <div class="d-flex flex-column flex-lg-row mb-5">
-                <div class="col-12 col-md-12 col-lg-4  text-center lh-lg mt-lg-4"><i class="bi bi-tools  "
-                        style="font-size: 4rem; color: #1F5E8C"></i>
-                    <h2 class="h2">PROFISSIONAIS<br>ESPECIALIZADOS</h2>
-                    <p class="p">Equipe experiente e apaixonada por motos</p>
-                </div>
-                <div class=" col-12 col-md-12 col-lg-4 text-center lh-lg mt-lg-4"><i class="bi bi-shield-check "
-                        style="font-size: 4rem; color: #1F5E8C;"></i>
-                    <h2 class="h2">GARANTIA DE <BR>SERVIÇOS</h2>
-                    <p class="p">Segurança e garantia em todos os nossos serviços</p>
-                </div>
-                <div class=" col-12 col-md-12 col-lg-4 text-center lh-lg mt-lg-4"><i class="bi bi-fast-forward "
-                        style="font-size: 4rem; color: #1F5E8C;"></i>
-                    <h2 class="h2">ATENDIMENTO <br> RAPIDO</h2>
-                    <p class="p">Para você voltar à estrada o quanto antes</p>
-                </div>
-            </div>
-        </section>
-        <section class="blue-container container-fluid section-2">
+        <section class="blue-container container-fluid section-2" id="servicos">
             <div class="box-deco"></div>
             <div class="d-flex flex-column">
                 <div class="text-center">
@@ -137,7 +119,7 @@
             </div>
 
         </section>
-        <section class="blue-container container-fluid section-3 py-5">
+        <section class="blue-container container-fluid section-3 py-5" id="sobre">
 
             <h2 class="h2 text-center h2-animation h2-services-title mb-5">
                 Quem vai cuidar da sua moto?
@@ -149,31 +131,31 @@
                     <!-- ESQUERDA (CARDS) -->
                     <div class="col-12 col-md-4 d-flex justify-content-center">
 
-                        <div class="card-stack">
 
-                            <!-- CARD 1 -->
-                            <div class="profile-card card-deck-item p-4 active">
 
-                                <div class="d-flex align-items-center gap-3 mb-3">
-                                    <img src="img/MR motobox.png" class="profile-img">
+                        <!-- CARD 1 -->
+                        <div class="profile-card card-deck-item p-4 active">
 
-                                    <div>
-                                        <h5 class="mb-1 text-white">Equipe MR MotoBox</h5>
-                                        <small class="text-light">Especialistas em manutenção</small>
-                                    </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="img/MR motobox.png" class="profile-img">
+
+                                <div>
+                                    <h5 class="mb-1 text-white">Equipe MR MotoBox</h5>
+                                    <small class="text-light">Especialistas em manutenção</small>
                                 </div>
-
-                                <hr class="divider">
-
-                                <p class="p-servicos">
-                                    Especialistas em manutenção de motos em São Paulo SP, oferecendo serviços de
-                                    revisão,
-                                    troca de óleo, freios e mecânica geral. Atendimento rápido e confiável.
-                                </p>
-
                             </div>
 
+                            <hr class="divider">
+
+                            <p class="p-servicos">
+                                Especialistas em manutenção de motos em São Paulo SP, oferecendo serviços de
+                                revisão,
+                                troca de óleo, freios e mecânica geral. Atendimento rápido e confiável.
+                            </p>
+
                         </div>
+
+
                     </div>
 
                     <!-- DIREITA (CONTEÚDO) -->
@@ -195,9 +177,7 @@
                                 garantindo mais segurança e desempenho para sua moto.
                             </p>
 
-                            <a href="#" class="btn btn-primary align-self-start">
-                                Agendar agora
-                            </a>
+
 
                         </div>
 
@@ -208,9 +188,9 @@
 
         </section>
         <section>
-            <div class="container-fluid blue-container section-4">
+            <div class="container-fluid blue-container section-4" id="contato">
                 <div class="row h-100">
-                    <div class="container d-flex flex-column col-lg-5 gap-5 text-center justify-content-between">
+                    <div class="container d-flex flex-column col-lg-5 gap-5 text-center text-lg-start justify-content-evenly">
                         <h2 class="h2-services-title h2-animation h2-bolder">FALE COM <br> A GENTE</h2>
                         <div class="d-flex flex-column" id="icons-contatos">
                             <i class="bi bi-whatsapp " style="font-size: 2rem; color: #daf902;"><span
@@ -221,8 +201,8 @@
                                     3044-2591
                                 </span></i>
                         </div>
-                        <h3 class="h3 h3-bolder pt-lg-5">Nossa oficina está aberta de</h3>
-                        <p class="p-servicos p-bold pb-lg-5">segunda a sexta, das 08h às 17h</p>
+                        <h3 class="h3 h3-bolder pt-lg-5">Nossa oficina está aberta de <br> <span
+                                class="p-servicos fw-medium pb-lg-5">segunda a sexta, das 08h às 17h</span></h3>
                     </div>
                     <div class="container d-flex flex-column text-center text-lg-start col-lg-5">
                         <h3 class="h3 h3-bolder">Nós estamos aqui:</h3>
@@ -240,7 +220,7 @@
     <footer>
 
     </footer>
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
