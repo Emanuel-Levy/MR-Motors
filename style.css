@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 *::before,
@@ -20,6 +21,7 @@
 
 body {
     cursor: default;
+    overflow-x: hidden;
 }
 
 a, button {
@@ -151,6 +153,7 @@ a, button {
 }
 
 .h1-hero {
+    font-family: 'Montserrat', sans-serif;
     color: var(--primary-yellow);
     font-size: clamp(2.5rem, 3vw, 4rem);
     text-wrap: wrap;
@@ -160,8 +163,7 @@ a, button {
 .p-hero {
     color: var(--secondary-white);
     font-size: clamp(1.3rem, 3vw, 1.5rem);
-    font-weight: 500;
-    font-style: italic;
+
 }
 
 .btn-hero {
@@ -298,7 +300,8 @@ a, button {
 
 .iframe-map {
     width: 100%;
-    height: 70%;
+    height: 300px;
+    aspect-ratio: 16 / 9;
 
 }
 
@@ -323,12 +326,18 @@ a, button {
 }
 
 @media (max-width:480px) {
+
     /*.box-deco{
         top: -20px;
         right: -10px;
         height: 100px;
         width: 50px;
     }*/
+    .iframe-map {
+        aspect-ratio: 4 / 3;
+        /* mais quadrado = mais alto no mobile */
+        height: auto;
+    }
 }
 
 @media (hover: hover) and (pointer: fine) {
