@@ -305,6 +305,90 @@ a, button {
 
 }
 
+/* ── FOOTER ── */
+.footer {
+    background-color: var(--secondary-blue);
+    font-family: 'Montserrat', sans-serif;
+    border-top: 3px solid var(--primary-yellow);
+}
+
+.footer-top {
+    padding: 3.5rem 0 2.5rem;
+}
+
+.footer-logo {
+    height: 70px;
+    width: auto;
+}
+
+.footer-desc {
+    color: var(--secondary-white);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    opacity: 0.85;
+}
+
+.footer-title {
+    color: var(--primary-yellow);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(218, 249, 2, 0.25);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.footer-links li,
+.footer-links a {
+    color: var(--secondary-white);
+    font-size: 0.9rem;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-yellow);
+    opacity: 1;
+}
+
+.footer-btn-wzp {
+    color: var(--cta-green);
+    border: 2px solid var(--cta-green);
+    border-radius: 24px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.footer-btn-wzp:hover {
+    background-color: var(--cta-green);
+    color: var(--secondary-blue);
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    color: var(--secondary-white);
+    opacity: 0.75;
+    text-align: center;
+}
+
+.footer-bottom-dev {
+    font-size: 0.8rem;
+    color: var(--secondary-white);
+}
+
 @media (max-width:900px) {
 
     .btn-hero-container {
